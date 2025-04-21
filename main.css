@@ -55,10 +55,9 @@ body.menu-open {
 }
 
 .logo-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 80px;
+  height: auto; /* maintains aspect ratio */
+  object-fit: contain; /* shows full image without cropping */
 }
 
 .logo-text {
@@ -203,7 +202,7 @@ section {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: #f44336;
+  background: #0632b8;
 }
 
 .about-content {
@@ -362,7 +361,7 @@ section {
 }
 
 .social-links a:hover {
-  color: #f44336;
+  color: #0632b8;
 }
 
 /* MOBILE STYLES */
