@@ -405,7 +405,7 @@ section {
   }
 }
 .logo-img {
-    width: 70px;
+    width: 65px;
     height: auto; /* Keeps the aspect ratio correct */
     border-radius: 0; /* Ensures no circular crop */
   }
