@@ -55,7 +55,7 @@ body.menu-open {
 }
 
 .logo-img {
-  width: 80px;
+  width: 100px;
   height: auto; /* maintains aspect ratio */
   object-fit: contain; /* shows full image without cropping */
 }
