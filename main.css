@@ -83,6 +83,7 @@ body.menu-open {
   color: #0b237d;
 }
 
+/* Mobile Button */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -93,13 +94,14 @@ body.menu-open {
   z-index: 101;
 }
 
+/* Mobile Menu Overlay */
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 98;
   opacity: 0;
   visibility: hidden;
@@ -111,8 +113,9 @@ body.menu-open {
   visibility: visible;
 }
 
+/* Mobile Nav (Menu) */
 .mobile-nav {
-  display: none;
+  display: flex;
   flex-direction: column;
   background: white;
   width: 100%;
@@ -122,17 +125,15 @@ body.menu-open {
   z-index: 99;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
+  transform: translateY(-100%);  /* Start off-screen */
+  transition: transform 0.3s ease;
 }
 
 .mobile-nav.active {
-  display: flex;
-  max-height: 500px; /* adjust as needed */
+  transform: translateY(0);  /* Drop down to its normal position */
 }
 
-}
-
+/* Links in Mobile Nav */
 .mobile-nav a {
   display: block;
   padding: 15px 0;
@@ -144,6 +145,13 @@ body.menu-open {
 
 .mobile-nav a:hover {
   color: #0b237d;
+}
+
+/* Media Query for Mobile Button Visibility */
+@media screen and (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
 }
 
 .hero {
