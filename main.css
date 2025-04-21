@@ -55,11 +55,10 @@ body.menu-open {
 }
 
 .logo-img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #f44336;
 }
 
 .logo-text {
@@ -150,7 +149,11 @@ body.menu-open {
   background-position: center;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
