@@ -56,8 +56,8 @@ body.menu-open {
 
 .logo-img {
   width: 120px;
-  height: 1200px;
-  border-radius: 70%;
+  height: 120px;
+  border-radius: 60%;
   object-fit: cover;
 }
 
