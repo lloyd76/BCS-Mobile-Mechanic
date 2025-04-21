@@ -32,38 +32,38 @@ body.menu-open {
 }
 
 .header {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: white !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
 }
 
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 15px 20px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important; 
 }
 
 .logo-img {
-  width: 100px;
-  height: auto; /* maintains aspect ratio */
-  object-fit: contain; /* shows full image without cropping */
+  width: 100px !important;
+  height: auto !important; /* maintains aspect ratio */
+  object-fit: contain !important; /* shows full image without cropping */
 }
 
 .logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0b237d;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #0b237d !important;
 }
 
 .navbar-nav {
