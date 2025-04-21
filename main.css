@@ -112,21 +112,25 @@ body.menu-open {
 }
 
 .mobile-nav {
-  position: fixed;
-  top: 0;
-  left: -80%;
-  width: 80%;
-  height: 100vh;
+  display: none;
+  flex-direction: column;
   background: white;
-  padding: 30px 20px;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-  transition: left 0.3s ease;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
   z-index: 99;
-  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
 }
 
 .mobile-nav.active {
-  left: 0;
+  display: flex;
+  max-height: 500px; /* adjust as needed */
+}
+
 }
 
 .mobile-nav a {
@@ -409,7 +413,7 @@ section {
     height: auto; /* Keeps the aspect ratio correct */
     border-radius: 0; /* Ensures no circular crop */
   }
-}
+
 
 @media (max-width: 480px) {
   .logo-text {
