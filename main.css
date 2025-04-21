@@ -55,9 +55,9 @@ body.menu-open {
 }
 
 .logo-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 120px;
+  height: 1200px;
+  border-radius: 70%;
   object-fit: cover;
 }
 
