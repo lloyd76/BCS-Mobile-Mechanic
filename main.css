@@ -53,7 +53,6 @@ body.menu-open {
   align-items: center;
   gap: 15px;
   .logo-container .logo-text {
-  text-decoration: none !important;
 }
 
 .logo-img {
@@ -66,6 +65,7 @@ body.menu-open {
   font-size: 1.5rem;
   font-weight: 700;
   color: #0b237d;
+  text-decoration: none !important;
 }
 
 .nav {
