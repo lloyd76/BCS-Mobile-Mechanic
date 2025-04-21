@@ -312,9 +312,7 @@ section {
     display: none;
   }
 
-  .mobile-menu-btn {
-    display: block;
-  }
+ 
 
   .hero h1 {
     font-size: 2rem;
@@ -333,18 +331,6 @@ section {
     margin: 5px 0;
   }
 
-  body.menu-open {
-    transform: translateX(80%);
-  }
-
-  .mobile-nav {
-    left: -80%;
-    width: 80%;
-  }
-
-  .mobile-nav.active {
-    left: 0;
-  }
 }
 .logo-img {
     width: 65px;
@@ -371,16 +357,3 @@ section {
     font-size: 1.8rem;
   }
 
-  body.menu-open {
-    transform: translateX(70%);
-  }
-
-  .mobile-nav {
-    left: -70%;
-    width: 70%;
-  }
-
-  .mobile-nav.active {
-    left: 0;
-  }
-}
