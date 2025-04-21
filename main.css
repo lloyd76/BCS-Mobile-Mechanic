@@ -64,7 +64,7 @@ body.menu-open {
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f44336;
+  color: #0b237d;
 }
 
 .nav {
@@ -81,7 +81,7 @@ body.menu-open {
 }
 
 .nav a:hover {
-  color: #f44336;
+  color: #0b237d;
 }
 
 .mobile-menu-btn {
@@ -140,7 +140,7 @@ body.menu-open {
 }
 
 .mobile-nav a:hover {
-  color: #f44336;
+  color: #0b237d;
 }
 
 .hero {
@@ -162,7 +162,7 @@ body.menu-open {
     }
     .btn {
       display: inline-block;
-      background: #f44336;
+      background: #0b237d;
       color: white;
       padding: 12px 30px;
       border-radius: 30px;
@@ -173,7 +173,7 @@ body.menu-open {
       cursor: pointer;
     }
     .btn:hover {
-      background: #d32f2f;
+      background: #0632b8;
     }
 
 section {
