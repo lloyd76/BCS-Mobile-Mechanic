@@ -1,7 +1,4 @@
 .navbar {
-  --bs-navbar-padding-y: 1rem !important;
-  --bs-navbar-padding-x: 1rem !important;
-  padding: 1rem 1rem !important;
   flex-wrap: nowrap !important; /* prevent the wrapping issue */
 }
 
@@ -52,12 +49,13 @@ body.menu-open {
 }
 
 .header-container {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding: 15px 20px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* Don't wrap logo and nav */
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo-container {
