@@ -1,3 +1,11 @@
+.navbar {
+  --bs-navbar-padding-y: 1rem !important;
+  --bs-navbar-padding-x: 1rem !important;
+  padding: 1rem 1rem !important;
+  flex-wrap: nowrap !important; /* prevent the wrapping issue */
+}
+
+
 a {
   text-decoration: none !important;
 }
