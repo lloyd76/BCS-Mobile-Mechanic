@@ -35,13 +35,11 @@
     }
     
     .logo-img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--primary-color);
-      margin-right: 15px;
-    }
+  width: 50px; /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
     
     .navbar-brand h2 {
       color: #0632b8;
