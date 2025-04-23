@@ -14,11 +14,16 @@
     }
     
     .top-bar {
-      background: var(--dark-color) !important;
-      color: white !important;
-      padding: 10px 0;
-      font-size: 0.9rem;
-    }
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
     
     .top-bar span {
       margin: 0 10px;
