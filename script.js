@@ -1,45 +1,52 @@
-// Mobile menu functionality
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const mobileNav = document.getElementById('mobileNav');
-const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-const body = document.body;
-
-// Toggle the mobile menu
-function toggleMobileMenu() {
-  mobileNav.classList.toggle('active');  // This will trigger the CSS transition to drop the menu
-  mobileMenuOverlay.classList.toggle('active');  // This will show the overlay
-  body.classList.toggle('menu-open');  // Optional, you can use this to prevent scrolling while the menu is open
-}
-
-// Event listener for the mobile menu button (Hamburger icon)
-mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-
-// Event listener for clicking on the overlay to close the menu
-mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
-
-// Smooth scrolling function (to navigate to sections)
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Handle mobile nav clicks (scroll to sections and close the menu)
-function handleMobileNavClick(id) {
-  scrollToSection(id);
-  toggleMobileMenu();  // Close the mobile menu when a link is clicked
-}
-
-// Form submission (for the quote form)
-document.getElementById('quoteForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thank you for your request! We will contact you shortly.');
-  this.reset();
-});
-
-// Close mobile menu when clicking on logo
-document.querySelector('.logo-container').addEventListener('click', function() {
-  if (body.classList.contains('menu-open')) {
-    toggleMobileMenu();
-  }
-  scrollToSection('home');
-});
+  // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          // Close mobile menu if open
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+            bsCollapse.hide();
+          }
+          
+          // Smooth scroll to target
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+          
+          // Update URL without page reload
+          if (history.pushState) {
+            history.pushState(null, null, targetId);
+          } else {
+            location.hash = targetId;
+          }
+        }
+      });
+    });
+    
+    // Form submission handling
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Here you would typically send the form data to your server
+      // For demonstration, we'll just show an alert
+      alert('Thank you for your request! We will contact you shortly.');
+      
+      // Reset the form
+      this.reset();
+    });
+    
+    // Change navbar style on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
