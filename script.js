@@ -14,10 +14,16 @@
             bsCollapse.hide();
           }
           
-          // Smooth scroll to target
-          targetElement.scrollIntoView({
-            behavior: 'smooth'
-          });
+          // Scroll with offset to account for fixed header
+const headerOffset = 15; // Change this to match your header's height
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+window.scrollTo({
+  top: offsetPosition,
+  behavior: 'smooth'
+});
+
           
           // Update URL without page reload
           if (history.pushState) {
