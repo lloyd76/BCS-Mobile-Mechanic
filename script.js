@@ -15,7 +15,7 @@
           }
           
           // Scroll with offset to account for fixed header
-const headerOffset = 20; // Change this to match your header's height
+const headerOffset = 27; // Change this to match your header's height
 const elementPosition = targetElement.getBoundingClientRect().top;
 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
