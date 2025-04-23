@@ -320,8 +320,12 @@ footer {
 
 .footer-logo img {
     max-width: 200px;
-    height: auto;
+    border: 2px solid white;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
 }
+
 
 .footer-contact {
     flex: 1;
