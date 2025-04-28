@@ -70,7 +70,7 @@
       background-position: center;
       color: white;
       text-align: center;
-      min-height: 100vh;
+      padding: 160px 10px;
     }
     
     .hero h1 {
